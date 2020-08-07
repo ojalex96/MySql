@@ -35,7 +35,7 @@ public class Main {
         PreparedStatement query;
         Class.forName("com.mysql.jdbc.Driver");
         Connection con1=DriverManager.getConnection("jdbc:mysql://localhost/inventory","root","");
-        query=con1.prepareStatement("SELECT * FROM category");
+        query=con1.prepareStatement("SELECT FROM category");
         ResultSet rs=query.executeQuery();
 
         if(!rs.isBeforeFirst()){
